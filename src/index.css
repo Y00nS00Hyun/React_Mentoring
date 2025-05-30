@@ -1,0 +1,15 @@
+.card {
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+}
+
+.name {
+    background-color: green;
+    color: orange;
+}
+
+.character {
+    background-color: red;
+    color: blue;
+}
