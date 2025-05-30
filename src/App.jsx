@@ -1,10 +1,22 @@
 import "./App.css";
 import Viewer from "./components/Viewer";
 import Controller from "./components/Controller";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(`count:${count}`)
+  }, [count])
+
+  useEffect(() => {
+    console.log("mount")
+  }, [])
+
+  useEffect(() => {
+    console.log("update")
+  })
 
   const handleClick = (num) => {
     setCount(count + num);
